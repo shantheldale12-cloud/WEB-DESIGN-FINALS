@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Buttons Activity - Page 2</title>
+
+  <style>
+    body {
+      margin: 0;
+      background-image: url("https://i.pinimg.com/1200x/a4/9a/83/a49a831ea2b1de1679cbcfdcc07eadb4.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .text-container {
+      margin-top: auto;
+      text-align: center;
+      margin-bottom: 0px;
+    }
+
+    .main-title {
+      font-family: Arial;
+      font-size: 155px;
+      color: white;
+      font-weight: bold;
+      text-shadow: 3px 3px 6px black;
+      margin: 0;
+    }
+
+    .sub-title {
+      font-family: Arial;
+      font-size: 30px;
+      color: white;
+      margin-top: 3px;
+    }
+
+    .button-container {
+      padding: 30px 20px 80px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 15px;
+    }
+
+    button {
+      cursor: pointer;
+      min-width: 180px;
+      font-family: Arial;
+      transition: all 0.3s ease; 
+    }
+
+
+
+    .uber-btn {
+      background-color: black;
+      color: white;
+      padding: 5px;
+      border: none;
+    }
+    .uber-btn:hover {
+      background-color: #333;
+      transform: scale(1.05);
+    }
+
+    .amazon-btn {
+      background-color: rgb(255, 216, 20);
+      color: black;
+      padding: 10px 40px;
+      border: none;
+      border-radius: 20px;
+    }
+    .amazon-btn:hover {
+      background-color: rgb(240, 200, 0);
+      transform: scale(1.05);
+    }
+
+    .github-btn {
+      background-color: rgb(46, 164, 79);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+    }
+    .github-btn:hover {
+      background-color: rgb(36, 140, 65);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .bootstrap-btn {
+      background-color: rgb(121, 82, 179);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+    }
+    .bootstrap-btn:hover {
+      background-color: rgb(100, 60, 160);
+      transform: translateY(-2px);
+    }
+
+    .bootstrap-outline {
+      background-color: white;
+      color: rgb(108, 117, 125);
+      padding: 10px 20px;
+      border: 1px solid rgb(108, 117, 125);
+      border-radius: 3px;
+    }
+    .bootstrap-outline:hover {
+      background-color: rgb(108, 117, 125);
+      color: white;
+    }
+
+    .linkedin-btn {
+      background-color: rgb(10,102,194);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+    }
+    .linkedin-btn:hover {
+      background-color: rgb(8, 85, 160);
+      transform: scale(1.05);
+    }
+
+    .linkedin-outline {
+      background-color: white;
+      color: rgb(10,102,194);
+      padding: 10px 20px;
+      border: 1px solid rgb(10,102,194);
+      border-radius: 20px;
+    }
+    .linkedin-outline:hover {
+      background-color: rgb(10,102,194);
+      color: white;
+    }
+
+   
+    .pagination {
+      position: fixed;
+      bottom: 30px;
+      width: 100%;
+      text-align: center;
+      font-family: Arial;
+    }
+
+    .pagination a {
+      color: white;
+      padding: 8px 12px;
+      text-decoration: none;
+      margin: 0 3px;
+      border-radius: 5px;
+      background: rgba(0,0,0,0);
+    }
+
+    .pagination a:hover {
+      background: white;
+      color: black;
+    }
+
+    .pagination a.active {
+      background: orange;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="text-container">
+  <h1 class="main-title">CSS EFFECTS</h1>
+  <br> 
+  <p class="sub-title">
+   These button effects are fun to learn… but it feels like adult work. I still want to sleep, you know!
+  </p>
+</div>
+
+<div class="button-container">
+  <button class="uber-btn">Request now</button>
+  <button class="amazon-btn">Add to Cart</button>
+  <button class="github-btn">Sign up</button>
+  <button class="bootstrap-btn">Get started</button>
+  <button class="bootstrap-outline">Download</button>
+  <button class="linkedin-btn">Apply on company website</button>
+  <button class="linkedin-outline">Save</button>
+</div>
+
+
+<div class="pagination">
+  <a href="cssbasicpage01.html">«</a>
+  <a href="cssbasicpage01.html">1</a>
+  <a href="csseffectspage02" class="active">2</a>
+  <a href="sleeping.html">3</a>
+  <a href="sleeping.html">»</a>
+</div>
+
+</body>
+</html>

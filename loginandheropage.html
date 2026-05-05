@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shinchan Activity Website</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: url('https://i.pinimg.com/1200x/28/b6/e9/28b6e924431b5f0edbbf5b6a3843a9e7.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+}
+
+
+.login-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(103, 137, 68, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+
+.login-marquee {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 10000;
+}
+
+
+.login-box {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  color: #678944;
+  width: 260px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.login-box input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 2px solid #678944;
+}
+
+.login-box button {
+  background: #678944;
+  color: white;
+  width: 75%;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+#appContent {
+  display: none;
+}
+
+
+#hero {
+  height: 100vh;
+  position: relative;
+}
+
+#hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#hero .content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero h1 {
+  font-size: 170px;
+  margin-bottom: 10px;
+  text-shadow: 3px 3px 20px black;
+}
+
+#hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  background: #ff4d4d;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff1a1a;
+  transform: scale(1.1);
+}
+
+.hero-name {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 22px;
+  letter-spacing: 2px;
+  opacity: 0.85;
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="login-container" id="loginPage">
+
+  
+  <div class="login-marquee">
+    <marquee>
+    WEB DESIGN FINALS &nbsp;&nbsp; | &nbsp;&nbsp; RIVAS, SHANTHEL DALE A. &nbsp;&nbsp; | &nbsp;&nbsp; BSGD 3-A
+    </marquee>
+  </div>
+
+  <div class="login-box">
+    <h2>Welcome</h2>
+
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Passcode">
+
+    <button onclick="login()">Get in trouble</button>
+  </div>
+</div>
+
+
+<div id="appContent">
+
+<section id="hero">
+  <div class="overlay"></div>
+
+  <div class="content">
+    <h1>野原 しんのすけ</h1>
+    <p>What could possibly go wrong? Everything.</p>
+
+    <button class="btn" onclick="goToGifPage()">
+      Anyway, let’s begin.
+    </button>
+
+    <div class="hero-name">Shinnosuke Nohara</div>
+  </div>
+</section>
+
+</div>
+
+<script>
+function login() {
+  document.getElementById("loginPage").style.display = "none";
+  document.getElementById("appContent").style.display = "block";
+}
+
+function goToGifPage() {
+  window.location.href = "dancing.html";
+}
+</script>
+
+</body>
+</html>
